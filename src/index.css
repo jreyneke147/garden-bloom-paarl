@@ -2,41 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* GardenCare Paarl Design System - Nature-inspired professional palette */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Nature-inspired color palette */
+    --background: 120 30% 97%;
+    --foreground: 120 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 120 20% 98%;
+    --card-foreground: 120 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 120 20% 98%;
+    --popover-foreground: 120 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Rich forest green primary */
+    --primary: 120 45% 25%;
+    --primary-foreground: 120 30% 97%;
+    
+    /* Fresh spring green secondary */
+    --secondary: 110 35% 85%;
+    --secondary-foreground: 120 45% 25%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft nature tones */
+    --muted: 120 20% 92%;
+    --muted-foreground: 120 15% 45%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warm earth accent */
+    --accent: 35 25% 88%;
+    --accent-foreground: 120 45% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 120 20% 88%;
+    --input: 120 20% 88%;
+    --ring: 120 45% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Beautiful gradients for hero sections */
+    --gradient-nature: linear-gradient(135deg, hsl(120 45% 25%), hsl(110 40% 35%));
+    --gradient-earth: linear-gradient(180deg, hsl(120 30% 97%), hsl(110 35% 92%));
+    --gradient-overlay: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+
+    /* Elegant shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(120 45% 25% / 0.1);
+    --shadow-elegant: 0 8px 30px -4px hsl(120 45% 25% / 0.15);
+    --shadow-hero: 0 20px 60px -10px hsl(120 45% 25% / 0.3);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +118,44 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Hero background with overlay */
+  .hero-bg {
+    background: var(--gradient-earth);
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background: var(--gradient-overlay);
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  /* Smooth hover transforms */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-elegant);
+  }
+
+  /* Professional service cards */
+  .service-card {
+    background: hsl(var(--card));
+    box-shadow: var(--shadow-soft);
+    transition: var(--transition-smooth);
+    border: 1px solid hsl(var(--border));
+  }
+  
+  .service-card:hover {
+    box-shadow: var(--shadow-elegant);
+    transform: translateY(-4px);
   }
 }

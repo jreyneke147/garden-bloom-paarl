@@ -1,4 +1,4 @@
-import { Scissors, Trash2, Sprout, Bug, CheckCircle } from "lucide-react";
+import { Scissors, Sprout, Bug, CheckCircle } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -9,12 +9,6 @@ const Services = () => {
       title: "Garden Maintenance",
       description: "Complete lawn mowing, trimming, and weeding services to keep your garden pristine year-round.",
       features: ["Lawn mowing", "Hedge trimming", "Weed removal", "Regular maintenance"]
-    },
-    {
-      icon: Trash2,
-      title: "Common Area Cleaning",
-      description: "Professional sweeping and removal of dead leaves from pathways and common areas.",
-      features: ["Pathway sweeping", "Leaf removal", "Debris cleanup", "Area maintenance"]
     },
     {
       icon: Sprout,

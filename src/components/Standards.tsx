@@ -5,8 +5,8 @@ const Standards = () => {
   const standards = [
     {
       icon: Users,
-      title: "Trained Professional Staff",
-      description: "All team members are properly trained and wear branded clothing for easy identification and professionalism.",
+      title: "Professional Staff",
+      description: "All team members wear branded clothing for easy identification and professionalism.",
       time: "Always maintained"
     },
     {

@@ -25,12 +25,10 @@ const Hero = () => {
           <div className="space-y-3 mb-8">
             <p className="text-xl md:text-2xl font-medium">Where Expertise Meets Nature</p>
             <p className="text-lg md:text-xl opacity-90">From Ugly to Picturesque</p>
-            <p className="text-lg md:text-xl opacity-90">Where Elegance Blossoms</p>
           </div>
           
           <p className="text-lg md:text-xl mb-10 opacity-95 max-w-2xl mx-auto">
-            Professional garden maintenance and landscaping services in Paarl, Western Cape. 
-            Transform your outdoor space with 30+ years of expertise.
+            Professional garden maintenance and landscaping services in Paarl, Western Cape.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

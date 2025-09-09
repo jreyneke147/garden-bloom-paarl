@@ -21,7 +21,7 @@ const About = () => {
     },
     {
       icon: Award,
-      title: "Plant Production Principles",
+      title: "Intensive Plant Production Principles",
       description: "AIPP, 2005"
     }
   ];

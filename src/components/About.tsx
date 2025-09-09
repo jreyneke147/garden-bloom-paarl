@@ -1,32 +1,21 @@
 import { Award, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-const About = () => {
-  const credentials = [
-    {
-      icon: GraduationCap,
-      title: "M.Sc. Agriculture",
-      description: "University of Stellenbosch",
-      highlight: true
-    },
-    {
-      icon: Award,
-      title: "Crop Protection Certification",
-      description: "AVCASA, 2018"
-    },
-    {
-      icon: Award,
-      title: "Irrigation & Fertigation",
-      description: "Basic & Intermediate - Fertigation Academy"
-    },
-    {
-      icon: Award,
-      title: "Intensive Plant Production Principles",
-      description: "AIPP, 2005"
-    }
-  ];
-
-  return (
+const credentials = [
+  {
+    icon: Award,
+    title: "Award Winner",
+    description: "Recognized for excellence in gardening.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Certified Expert",
+    description: "Certified horticulturist with years of experience.",
+  },
+  // Add more credentials here if needed
+];
+];
+return (
     <section className="py-20 bg-gradient-earth">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
@@ -34,10 +23,10 @@ const About = () => {
               {credentials.map((credential, index) => (
                 <Card 
                   key={index} 
-                  className={`service-card hover-lift ${credential.highlight ? 'ring-2 ring-primary' : ''}`}
+                  className="service-card hover-lift"
                 >
                   <CardContent className="p-6">
-                    <credential.icon className={`h-8 w-8 mb-4 ${credential.highlight ? 'text-primary' : 'text-muted-foreground'}`} />
+                    <credential.icon className="h-8 w-8 mb-4 text-muted-foreground" />
                     <h4 className="font-semibold text-card-foreground mb-2">
                       {credential.title}
                     </h4>

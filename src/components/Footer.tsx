@@ -9,13 +9,9 @@ const Footer = () => {
             {/* Company Info */}
             <div>
               <h3 className="text-2xl font-bold mb-4">GardenCare Paarl</h3>
-              <p className="text-primary-foreground/80 mb-4 leading-relaxed">
-                Where Expertise Meets Nature. Professional garden maintenance 
-                services with over 30 years of experience in Paarl, Western Cape.
-              </p>
-              <p className="text-sm text-primary-foreground/70">
-                M.Sc. Agric, University of Stellenbosch
-              </p>
+            <p className="text-primary-foreground/80 mb-4 leading-relaxed">
+              Where Expertise Meets Nature.
+            </p>
             </div>
 
             {/* Quick Contact */}

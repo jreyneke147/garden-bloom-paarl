@@ -14,14 +14,27 @@ const Services = () => {
       icon: Sprout,
       title: "Plant Nutrition",
       description: "Expert fertilization and nutrition programs for lawns and plant beds.",
-      features: ["Lawn fertilization", "Plant bed nutrition", "Soil analysis", "Growth optimization"],
+      features: [
+        "Lawn fertilization",
+        "Plant bed nutrition",
+        "Soil analysis",
+        "Growth optimization",
+        "Irrigation & Fertigation 2003 & 2006",
+        "National Fertilizer Advisor Course, BASOS 2004"
+      ],
       optional: true
     },
     {
       icon: Bug,
       title: "Pest Control",
-      description: "Comprehensive pest management for weeds, fungi, and insects using professional techniques.",
-      features: ["Weed control", "Fungal treatment", "Insect management", "Preventive care"],
+      description: "Pest management for weeds, fungi, and insects using professional techniques.",
+      features: [
+        "Weed control",
+        "Fungal treatment",
+        "Insect management",
+        "Preventive care",
+        "Crop Protection Certification 2018"
+      ],
       optional: true
     }
   ];
@@ -40,7 +53,7 @@ const Services = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-5xl justify-center">
             {services.map((service, index) => (
               <Card key={index} className="service-card hover-lift animate-fade-in-up relative">
                 {service.optional && (

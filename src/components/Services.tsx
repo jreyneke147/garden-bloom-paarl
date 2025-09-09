@@ -35,7 +35,7 @@ const Services = () => {
               Professional Services
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive garden care solutions tailored to transform and maintain 
+              Garden care solutions tailored to transform and maintain 
               your outdoor spaces with professional excellence.
             </p>
           </div>

@@ -72,17 +72,6 @@ const Standards = () => {
             ))}
           </div>
 
-          <div className="mt-16 text-center animate-fade-in-up">
-            <div className="bg-primary text-primary-foreground rounded-2xl p-8 shadow-elegant">
-              <h3 className="text-2xl font-bold mb-4">
-                Your Satisfaction is Our Guarantee
-              </h3>
-              <p className="text-primary-foreground/90 max-w-2xl mx-auto">
-                These professional standards are not just promises – they're our commitment to 
-                delivering exceptional service that exceeds your expectations every time.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>

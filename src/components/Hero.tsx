@@ -43,6 +43,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-6 text-lg font-semibold backdrop-blur-sm bg-white/10"
+              onClick={() => window.location.href = 'mailto:raathneville@gmail.com?subject=Garden Services Quote Request'}
             >
               <Mail className="mr-2 h-5 w-5" />
               Get Quote

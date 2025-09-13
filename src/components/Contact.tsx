@@ -99,7 +99,7 @@ const Contact = () => {
                   <Button 
                     variant="outline" 
                     size="lg"
-                    className="w-full border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold py-6"
+                    className="w-full bg-transparent border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold py-6"
                     onClick={() => window.location.href = 'mailto:raathneville@gmail.com?subject=Garden Services Inquiry'}
                   >
                     <Mail className="mr-2 h-5 w-5" />

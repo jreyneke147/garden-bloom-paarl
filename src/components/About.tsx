@@ -1,21 +1,21 @@
 import { Award, GraduationCap } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
-const credentials = [
-  {
-    icon: Award,
-    title: "Award Winner",
-    description: "Recognized for excellence in gardening.",
-  },
-  {
-    icon: GraduationCap,
-    title: "Certified Expert",
-    description: "Certified horticulturist with years of experience.",
-  },
-  // Add more credentials here if needed
-];
-];
-return (
+const About = () => {
+  const credentials = [
+    {
+      icon: Award,
+      title: "Award Winner",
+      description: "Recognized for excellence in gardening.",
+    },
+    {
+      icon: GraduationCap,
+      title: "Intensive Plant Production Principles",
+      description: "AIPP, 2005",
+    },
+  ];
+
+  return (
     <section className="py-20 bg-gradient-earth">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">

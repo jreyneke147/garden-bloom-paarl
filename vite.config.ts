@@ -5,8 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Use repository subpath for GitHub Pages in production
-  base: mode === "development" ? "/" : "/garden-bloom-paarl/",
+  // Configure base path via environment variable for deployment flexibility
+  base: process.env.VITE_BASE_PATH || "/",
   server: {
     host: "::",
     port: 8080,
